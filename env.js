@@ -1,3 +1,4 @@
+/* eslint-env node */
 /*
  * Env file to load and validate env variables
  * Be cautious; this file should not be imported into your source folder.
@@ -137,7 +138,7 @@ if (parsed.success === false) {
     parsed.error.flatten().fieldErrors,
 
     `\n❌ Missing variables in .env.${APP_ENV} file, Make sure all required variables are defined in the .env.${APP_ENV} file.`,
-    `\n💡 Tip: If you recently updated the .env.${APP_ENV} file and the error still persists, try restarting the server with the -cc flag to clear the cache.`
+    `\n💡 Tip: If you recently updated the .env.${APP_ENV} file and the error still persists, try restarting the server with the -c flag to clear the cache.`
   );
   throw new Error(
     'Invalid environment variables, Check terminal for more details '

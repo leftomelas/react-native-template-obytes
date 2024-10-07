@@ -152,6 +152,17 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Recipes',
+          items: [
+            // Each item here is one entry in the navigation menu.
+            {
+              label: 'Sentry Setup',
+              link: '/recipes/sentry-setup/',
+              badge: 'new',
+            },
+          ],
+        },
+        {
           label: 'Testing',
           items: [
             // Each item here is one entry in the navigation menu.
@@ -188,12 +199,26 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Libraries Recommendation',
+          link: '/libraries-recommendation',
+        },
+        {
+          label: 'FAQ',
+          link: '/faq',
+          badge: 'new',
+        },
+        {
           label: 'CHANGELOG',
           link: '/changelog',
         },
         {
           label: 'How to contribute ?',
           link: '/how-to-contribute',
+        },
+        {
+          label: 'Reviews',
+          link: '/reviews',
+          badge: 'new',
         },
         {
           label: 'Stay Updated',
